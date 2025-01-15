@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plumbing Company</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Welcome to Reliable Plumbing Services</h1>
+      <p>Your trusted partner for all plumbing needs.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-form-section">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>Please fill out the form below, and we’ll get back to you promptly.</p>
+        <form id="contactForm">
+          <label for="name">Customer Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+          <label for="service">Service Type Required</label>
+          <select id="service" name="service" required>
+            <option value="" disabled selected>Select a service</option>
+            <option value="pipe-repair">Pipe Repair</option>
+            <option value="drain-cleaning">Drain Cleaning</option>
+            <option value="water-heater-installation">Water Heater Installation</option>
+          </select>
+
+          <label for="appointment">Preferred Appointment Time</label>
+          <input type="datetime-local" id="appointment" name="appointment" required>
+
+          <button type="submit">Submit</button>
+        </form>
+        <div id="formMessage" class="hidden"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Reliable Plumbing Services. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
